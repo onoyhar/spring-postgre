@@ -11,10 +11,8 @@ public class Employee {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getStatus() {
-		return status;
-	}
-	public void setStatus(String name) {
+	public String getStatus() {	return status;	}
+	public void setStatus(String status) {
 		this.status = status;
 	}
 	public String getProject() {
@@ -24,7 +22,7 @@ public class Employee {
 		this.project = project;
 	}
 	public int getTanggal() { return tanggal; }
-	public void setTanggal(int salary) { this.tanggal = tanggal; }
+	public void setTanggal(int tanggal) { this.tanggal = tanggal; }
 	@Override
 	public String toString() {
 		return String.format("Pilot Of Technology [id=%s, status=%s, project=%s, tanggal=%s]", id, status, project, tanggal);
