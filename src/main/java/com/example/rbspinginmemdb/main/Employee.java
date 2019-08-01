@@ -2,36 +2,32 @@ package com.example.rbspinginmemdb.main;
 
 public class Employee {
 	String id;
-	String name;
-	String dob;
-	int salary;
+	String status;
+	String project;
+	int tanggal;
 	public String getId() {
 		return id;
 	}
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getStatus() {
+		return status;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setStatus(String name) {
+		this.status = status;
 	}
-	public String getDob() {
-		return dob;
+	public String getProject() {
+		return project;
 	}
-	public void setDob(String dob) {
-		this.dob = dob;
+	public void setProject(String project) {
+		this.project = project;
 	}
-	public int getSalary() {
-		return salary;
-	}
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
+	public int getTanggal() { return tanggal; }
+	public void setTanggal(int salary) { this.tanggal = tanggal; }
 	@Override
 	public String toString() {
-		return String.format("Employee [id=%s, name=%s, dob=%s, salary=%s]", id, name, dob, salary);
+		return String.format("Pilot Of Technology [id=%s, status=%s, project=%s, tanggal=%s]", id, status, project, tanggal);
 	}
 	
 	

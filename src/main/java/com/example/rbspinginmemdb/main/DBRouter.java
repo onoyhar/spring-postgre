@@ -44,11 +44,11 @@ public class DBRouter extends RouteBuilder {
 				Employee emp = new Employee();
 				
 				emp.setId(row.get("id").toString());
-				emp.setName(row.get("name").toString());
-				emp.setDob(row.get("dob").toString());
-				emp.setSalary((Integer)row.get("salary"));
+				emp.setStatus(row.get("status").toString());
+				emp.setProject(row.get("project").toString());
+				emp.setTanggal((Integer)row.get("tanggal"));
 				
-				System.out.println("Employee: "+ emp);
+				System.out.println("Pilot Of Technology: "+ emp);
 			}
 			
 		})
